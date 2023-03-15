@@ -63,7 +63,7 @@ const GEO = {"type": "FeatureCollection", "features": [{"type": "Feature", "geom
 /*
 Gen by XXX...
 === ToC ===
-1. projects.travel_map (len 1870)
+1. projects.travel_map (len 1948)
 2. emacs_auto_revert (len 103)
 
 */
@@ -156,8 +156,16 @@ L.geoJSON(GEO, {
 }).addTo(map);
 
 
-/*Legend specific*/
-var legend = L.control({ position: "bottomleft" });
+
+var legend = L.control({
+
+    /*
+      on iOS Safari, it appears too low...
+     */
+    //position: "bottomleft"
+    position: "topright"
+
+});
 
 legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "legend");
@@ -165,10 +173,10 @@ legend.onAdd = function(map) {
     div.innerHTML += LEG;
 
     /*
-  div.innerHTML += "<h4>Tegnforklaring</h4>";
+      div.innerHTML += "<h4>Tegnforklaring</h4>";
     */
     
-  return div;
+    return div;
 };
 
 legend.addTo(map);
