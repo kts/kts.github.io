@@ -6,7 +6,14 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 23:20:47 -0600</lastBuildDate>
     <atom:link href="https://kts.github.io/static-sites/000/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://kts.github.io/static-sites/000/posts/my-first-post/</link>
+      <pubDate>Wed, 15 May 2024 23:20:47 -0600</pubDate>
+      <guid>https://kts.github.io/static-sites/000/posts/my-first-post/</guid>
+      <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!</description>
+    </item>
   </channel>
 </rss>
